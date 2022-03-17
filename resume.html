@@ -1,7 +1,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Richard Hendricks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dickson Tan</title>
+<meta name="description" content="Dickson Tans Resume">
+<meta property="og:title" content="Dickson Tan">
+<meta property="og:description" content="Dickson Tans Resume">
 <style>
 body {
     color: #000000;
@@ -117,60 +121,73 @@ h1 + ul + p {
 </style>
 </head>
 <body>
-<div id="resume">
-<!-- The (first) h1 will be used as the <title> of the HTML page -->
-<h1>Richard Hendricks</h1>
+<main id="resume">
+<h1>Dickson Tan</h1>
 <!-- The unordered list immediately after the h1 will be formatted on a single
 line. It is intended to be used for contact details -->
+
 <ul>
-<li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#46;&#104;&#101;&#110;&#100;&#114;&#105;&#107;&#115;&#64;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#46;&#104;&#101;&#110;&#100;&#114;&#105;&#107;&#115;&#64;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
-<li>(912) 555-4321</li>
-<li><a href="http://richardhendricks.example.com">richardhendricks.example.com</a></li>
-<li>San Francisco, CA</li>
+<li><a href="mailto:dickson.tan.2013@gmail.com">email</a>]</li>
+<li><a href="https://github.com/Neurrone/">GitHub profile</a></li>
+<li><a href="https://neurrone.com">blog</a></li>
+<li>Singapore</li>
 </ul>
 <!-- The paragraph after the h1 and ul and before the first h2 is optional. It
 is intended to be used for a short summary. -->
-<p>CEO and Software Engineer with knowledge of applied information theory,
-including optimizing lossless compression schema of both the length-limited and
-adaptive variants.</p>
+
+<h2>Skills</h2>
+<ul>
+<li>Languages: JavaScript, TypeScript, Python, Rust</li>
+<li>Technologies: node.js, Serverless (AWS Lambda), React, Docker</li>
+<li>Others: API design, relational databases, unit, integration &amp; E2E testing, web accessibility</li>
+</ul>
 <h2>Experience</h2>
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
-<h3><span>CEO/President, Pied Piper</span> <span>Dec 2013 &ndash; Dec 2014</span></h3>
-<p>Pied Piper is a multi-platform technology based on a proprietary universal
-compression algorithm that has consistently fielded high Weisman Scores™ that
-are not merely competitive, but approach the theoretical limit of lossless
-compression.</p>
+
+<h3><span>Software Engineer, GovTech Singapore</span> <span>Apr 2021 &ndash; present</span></h3>
+<h3><span>Associate Software Engineer, GovTech Singapore</span> <span>Aug 2018 &ndash; Apr 2021</span></h3>
+<h4><span>GovWallet (Oct 2021 &ndash; present)</span></h4>
+<p><a href="https://www.developer.tech.gov.sg/technologies/platform/govwallet.html">GovWallet</a> is a reusable system for government agencies to disburse payouts to citizens.</p>
 <ul>
-<li>Build an algorithm for artist to detect if their music was violating
-   copyright infringement laws</li>
-<li>Successfully won Techcrunch Disrupt</li>
-<li>Optimized an algorithm that holds the current world record for Weisman Scores</li>
+<li>Technologies: TypeScript, Node.js, various AWS services (DynamoDB, Lambda, SQS), Python</li>
+<li>Added support for disbursing payouts that have an expiry date. This removes the need to manually reclaim unused funds when various schemes expire, a key requirement for agencies</li>
+<li>Automated various repetitive ops tasks, saving an estimated 1 hour per sprint</li>
+<li>Reduced time needed to run tests on the pipeline from 15 to 3 minutes. This was done by working around a memory leak</li>
 </ul>
-<h3><span>Teacher, CoderDojo</span> <span>July 2013 &ndash; Dec 2013</span></h3>
-<p>Global movement of free coding clubs for young people.</p>
+<h4><span>Notarise (Nov 2020 &ndash; Dec 2020)</span></h4>
+<p>Notarise is a portal for outbound travelers to get digitally authenticated and endorsed COVID-19 Pre-Departure Test results for travel.</p>
 <ul>
-<li>Awarded &lsquo;Teacher of the Month&rsquo;</li>
+<li>Technologies: Node.js, various AWS services (Lambda, SNS, SQS)</li>
+<li>Simplify travel by making notarised test results available in the SingPass mobile app. This was done by integrating with the SingPass backend</li>
+<li>Reduce time needed for travelers to get their notarised results. Exposed APIs for providers of COVID-19 tests for them to get results back to travelers more quickly</li>
+</ul>
+<h4><span>MyCareersFuture (Aug 2018 &ndash; Sep 2021)</span></h4>
+<p><a href="https://www.mycareersfuture.sg">MyCareersFuture (MCF)</a> is a job portal that matches jobseekers and employers through skill matching. Worked in a cross-functional scrum team of ~20 people.</p>
+<ul>
+<li>Technologies: Node.js, MySQL, React, Cypress, GraphQL, CouchDB, Docker, AWS</li>
+<li>Decouple MCF from a legacy system resulting in 3% more uptime and 10% less code in the backend. This legacy code was used to keep data in sync with this system bidirectionally in real-time which limited MCF&rsquo;s uptime and has caused data corruption issues</li>
+<li>Led design of new APIs for third parties that MCF integrates with, so API consumers pull data instead of data being pushed to each new third party. This means that work only needs to be done once to build the APIss with minimal effort to onboard new API consumers</li>
+<li>Reduce cycle time by 50% allowing for more frequent deployments. This was done by advocating for greater ownership of the end-to-end tests in the pipeline among developers. This increased the frequency of green builds deployable to production from once per fortnight to multiple times a week</li>
+<li>Provide level 3 support on a rotational basis to diagnose and fix bugs in production</li>
 </ul>
 <h2>Projects</h2>
-<h3><span>Miss Direction</span> <span>Aug 2016</span></h3>
-<p>A mapping engine that misguides you:</p>
 <ul>
-<li>Won award at AIHacks 2016</li>
-<li>Built by all women team of newbie programmers</li>
-<li>Using modern technologies such as GoogleMaps, Chrome Extension and Javascript</li>
+<li>Added support for keyboard navigation to the JSON viewer in Mozilla Firefox, released in version 76</li>
+<li>Created <a href="https://github.com/Neurrone/beets-audible">Beets-audible</a>, a plugin that adds support for audiobook management to Beets. Beets is an open-source music organizer with over 10000 stars on Github</li>
 </ul>
+<p><br></p>
 <h2>Education</h2>
-<h3><span>University of Oklahoma, BA Information Technology</span> <span>2011 &ndash; 2014</span></h3>
+<h3><span>National University of Singapore, BComp. Computer Science, Honors (Highest Distinction)</span> <span>2015 &ndash; 2018</span></h3>
 <ul>
-<li>GPA 4.0</li>
-<li>DB1101 - Basic SQL</li>
-<li>CS2011 - Java Introduction</li>
+<li>GPA 4.55/5.0</li>
+<li>Thematic Systems Project I and II (enrollment cap of 21 students): software engineering modules training students to improve code quality towards levels expected from engineers at high-end companies like Google and lead high-stakes open-source projects. Fixed bugs, provided code review and advised new contributors.</li>
 </ul>
-<h2>Skills</h2>
+<h2>Interests</h2>
 <ul>
-<li>Web development: HTML, CSS, JavaScript</li>
-<li>Compression: Mpeg, MP4, GIF</li>
-</ul></div>
+<li>Coffee</li>
+<li>Reading science fiction and fantasy</li>
+<li>Ontological coaching</li>
+</ul></main>
 </body>
 </html>
