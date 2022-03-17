@@ -15,17 +15,21 @@ preamble = """\
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
+<meta name="description" content="Dickson Tans Resume">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="Dickson Tans Resume">
 <style>
 {css}
 </style>
 </head>
 <body>
-<div id="resume">
+<main id="resume">
 """
 
 postamble = """\
-</div>
+</main>
 </body>
 </html>
 """
