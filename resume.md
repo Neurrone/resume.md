@@ -3,9 +3,9 @@
 <!-- The unordered list immediately after the h1 will be formatted on a single
 line. It is intended to be used for contact details -->
 
-- [email](mailto:dickson.tan.2013@gmail.com)]
+- [email](mailto:dickson.tan.2013@gmail.com)
 - [blog](https://neurrone.com)
-- [GitHub profile](https://github.com/Neurrone/)
+- [GitHub](https://github.com/Neurrone/)
 - [LinkedIn](https://www.linkedin.com/in/dickson-tan/)
 - Singapore
 
