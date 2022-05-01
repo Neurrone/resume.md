@@ -15,7 +15,7 @@ is intended to be used for a short summary. -->
 ## Skills
 
 - Languages: JavaScript, TypeScript, Python, Rust
-- Technologies: node.js, Serverless (AWS Lambda), React, Docker
+- Technologies: Node.js, AWS Lambda, React, Docker
 - Others: API design, relational databases, unit, integration & E2E testing, web accessibility, ontological coaching
 
 ## Experience
