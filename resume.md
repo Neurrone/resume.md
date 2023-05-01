@@ -23,16 +23,16 @@ is intended to be used for a short summary. -->
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
 
-### <span>Software Engineer, GovTech Singapore</span> <span>Apr 2021 -- present</span>
+### <span>Software Engineer II, GovTech Singapore</span> <span>Apr 2021 -- present</span>
 
-### <span>Associate Software Engineer, GovTech Singapore</span> <span>Aug 2018 -- Apr 2021</span>
+### <span>Software Engineer I, GovTech Singapore</span> <span>Aug 2018 -- Apr 2021</span>
 
 #### <span>GovWallet (Oct 2021 -- present)</span>
 
 [GovWallet](https://www.developer.tech.gov.sg/technologies/platform/govwallet.html) is a reusable system for government agencies to disburse payouts to citizens.
 
 - Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS), Python
-- Added support for disbursing payouts that have an expiry date. This removes the need to manually reclaim unused funds when various government schemes expire, a key requirement for agencies
+- Added support for automatically disbursing payouts that have an expiry date. This removes the need to manually reclaim unused funds when various government schemes expire, a key operational requirement for agencies
 - Reduced time needed to run tests on the pipeline from 15 to 3 minutes. This was done by working around a memory leak
 - Improved various ops processes by automation, saving an estimated 1 hour per sprint
 
