@@ -15,7 +15,7 @@ is intended to be used for a short summary. -->
 ## Skills
 
 - Languages: JavaScript, TypeScript, Python, Rust
-- Technologies: Node.js, AWS Lambda, React, Docker
+- Technologies: Node.js, AWS Lambda, Serverless framework, React, Docker
 - Others: API design, relational databases, unit, integration & E2E testing, web accessibility, ontological coaching
 
 ## Experience
@@ -32,7 +32,7 @@ hand -->
 [GovWallet](https://www.developer.tech.gov.sg/technologies/platform/govwallet.html) is a reusable system for government agencies to disburse payouts to citizens.
 
 - Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS), Python
-- Added support for automatically disbursing payouts that have an expiry date. This removes the need to manually reclaim unused funds when various government schemes expire, a key operational requirement for agencies
+- Led design and implementation of the credits expiry feature to have disbursed payouts automatically expire on a specific date. This removes the need to manually reclaim unused funds when various government schemes expire, a key operational requirement for agencies
 - Reduced time needed to run tests on the pipeline from 15 to 3 minutes. This was done by working around a memory leak
 - Improved various ops processes by automation, saving an estimated 1 hour per sprint
 
