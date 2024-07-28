@@ -32,7 +32,7 @@ hand -->
 [GovWallet](https://www.developer.tech.gov.sg/products/categories/platform/govwallet/overview.html) is a reusable system for government agencies to disburse payouts to citizens. GovWallet has disbursed over $400 million across 30 campaigns, served 1.5 million users, and processed 7.6 million transactions.
 
 - Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS, Step Functions), Python
-- Led design and implementation for the expiry of unused payouts, a core functionality now used by almost every campaign as it eliminates manual reclamation efforts. Successfully navigated complex interactions between refunds, spending, and expiry extensions
+- Designed and implemented a scalable payout expiry system capable of handling millions of transactions across multiple campaigns. This core functionality is now used by almost every campaign, eliminating manual reclamation efforts for unused funds
 - Optimized API endpoints for transaction data retrieval resulting in a 400% speedup. This was done by fixing critical bugs in a DynamoDB query that caused overfetching and rare endpoint failures
 - Improved system architecture and maintainability by decomposing monolithic Serverless deployment into smaller stacks, working around CloudFormation's limit of 500 resources in a single stack
 - Spearheaded progress towards Continuous Deployment (CD) by advocating for and implementing release toggles, simplifying the deployment process and encouraging smaller, more manageable Pull Requests. Reduced time needed to prepare deployments from 60 to 15 minutes
