@@ -15,8 +15,8 @@ is intended to be used for a short summary. -->
 ## Skills
 
 - Languages: JavaScript, TypeScript, Python, Rust
-- Technologies: Node.js, AWS Lambda, Serverless framework, React, Docker
-- Others: API design, relational databases, unit, integration & E2E testing, web accessibility, ontological coaching
+- Technologies: Node.js, AWS Lambda, Serverless framework, Docker, React
+- Others: API design, databases, unit, integration & E2E testing, web accessibility, ontological coaching
 
 ## Experience
 
@@ -29,28 +29,28 @@ hand -->
 
 #### <span>GovWallet (Oct 2021 -- present)</span>
 
-[GovWallet](https://www.developer.tech.gov.sg/technologies/platform/govwallet.html) is a reusable system for government agencies to disburse payouts to citizens.
+[GovWallet](https://www.developer.tech.gov.sg/products/categories/platform/govwallet/overview.html) is a reusable system for government agencies to disburse payouts to citizens. GovWallet has disbursed over $400 million across 30 campaigns, served 1.5 million users, and processed 7.6 million transactions.
 
-- Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS), Python
-- Led design and implementation of the credits expiry feature to have disbursed payouts automatically expire on a specific date. This removes the need to manually reclaim unused funds when various government schemes expire, a key operational requirement for agencies
-- Reduced time needed to run tests on the pipeline from 15 to 3 minutes. This was done by working around a memory leak
-- Improved various ops processes by automation, saving an estimated 1 hour per sprint
+- Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS, Step Functions), Python
+- Led design and implementation for the expiry of unused payouts, a core functionality now used by almost every campaign as it eliminates manual reclamation efforts. Successfully navigated complex interactions between refunds, spending, and expiry extensions
+- Optimized API endpoints for transaction data retrieval resulting in a 400% speedup. This was done by fixing critical bugs in a DynamoDB query that caused overfetching and rare endpoint failures
+- Improved system architecture and maintainability by decomposing monolithic Serverless deployment into smaller stacks, working around CloudFormation's limit of 500 resources in a single stack
+- Spearheaded progress towards Continuous Deployment (CD) by advocating for and implementing release toggles, simplifying the deployment process and encouraging smaller, more manageable Pull Requests. Reduced time needed to prepare deployments from 60 to 15 minutes
 
 #### <span>MyCareersFuture (Aug 2018 -- Sep 2021)</span>
 
-[MyCareersFuture (MCF)](https://www.mycareersfuture.sg) is a job portal that matches jobseekers and employers through skill matching.
+[MyCareersFuture (MCF)](https://www.mycareersfuture.gov.sg) is a job portal that matches jobseekers and employers through skill matching.
 
 - Technologies: Node.js, MySQL, React, Cypress, GraphQL, CouchDB, Docker, AWS
 - Design, build, and maintain microservices for managing jobseeker data and integration with third party service providers
-- Led a year long effort to decouple MCF from a legacy system resulting in 3% more uptime and 10% less code in the backend. This code was used to keep data in sync with the legacy system bidirectionally in real-time. This limited MCF's uptime and has been the cause of data corruption issues
-- Led design of new APIs for third parties that MCF integrates with, so API consumers pull data instead of data being pushed to each new third party. This means that work only needs to be done once to build the APIss with minimal effort to onboard new API consumers
-- Reduce cycle time by 50% allowing for more frequent deployments. This was done by advocating for greater ownership of the end-to-end tests in the pipeline among developers. This increased the frequency of green builds deployable to production from once per fortnight to multiple times a week
-- Provide level 3 support on a rotational basis to diagnose and fix bugs in production
+- Led a year long effort to decouple MCF from a legacy system resulting in 3% more uptime and 10% less code in the backend
+- Designed new APIs for third-party integrations, implementing a pull-based approach that minimized onboarding efforts for new API consumers
+- Reduced deployment cycle time by 50% through advocating for greater ownership of end-to-end tests, increasing deployable builds from bi-weekly to multiple times per week
 
 ## Projects
 
+- Created [Beets-audible](https://github.com/Neurrone/beets-audible), a plugin that adds support for audiobook management to Beets, a popular open-source music organizer
 - Added support for keyboard navigation to the JSON viewer in Mozilla Firefox, released in version 76
-- Created [Beets-audible](https://github.com/Neurrone/beets-audible), a plugin that adds support for audiobook management to Beets. Beets is an open-source music organizer with over 10000 stars on Github
 
 ## Education
 
@@ -60,5 +60,5 @@ hand -->
 
 ## Interests
 
-- Coffee
+- Specialty coffee
 - Reading science fiction and fantasy

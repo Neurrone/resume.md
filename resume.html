@@ -88,6 +88,11 @@ h1 + ul + p {
         box-shadow: none;
         -webkit-box-shadow: none;
     }
+    /* Do not underline abbr tags in PDF */
+    abbr {
+        text-decoration: none;
+        font-variant: none;
+    }
     /* Make links black in PDF */
     /* Move this outside the print block to apply this in HTML too */
     a, a:link, a:visited, a:hover {
@@ -139,8 +144,8 @@ is intended to be used for a short summary. -->
 <h2>Skills</h2>
 <ul>
 <li>Languages: JavaScript, TypeScript, Python, Rust</li>
-<li>Technologies: Node.js, AWS Lambda, Serverless framework, React, Docker</li>
-<li>Others: API design, relational databases, unit, integration &amp; E2E testing, web accessibility, ontological coaching</li>
+<li>Technologies: Node.js, AWS Lambda, Serverless framework, Docker, React</li>
+<li>Others: API design, databases, unit, integration &amp; E2E testing, web accessibility, ontological coaching</li>
 </ul>
 <h2>Experience</h2>
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
@@ -149,27 +154,27 @@ hand -->
 <h3><span>Software Engineer II, GovTech Singapore</span> <span>Apr 2021 &ndash; present</span></h3>
 <h3><span>Software Engineer I, GovTech Singapore</span> <span>Aug 2018 &ndash; Apr 2021</span></h3>
 <h4><span>GovWallet (Oct 2021 &ndash; present)</span></h4>
-<p><a href="https://www.developer.tech.gov.sg/technologies/platform/govwallet.html">GovWallet</a> is a reusable system for government agencies to disburse payouts to citizens.</p>
+<p><a href="https://www.developer.tech.gov.sg/products/categories/platform/govwallet/overview.html">GovWallet</a> is a reusable system for government agencies to disburse payouts to citizens. GovWallet has disbursed over $400 million across 30 campaigns, served 1.5 million users, and processed 7.6 million transactions.</p>
 <ul>
-<li>Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS), Python</li>
-<li>Led design and implementation of the credits expiry feature to have disbursed payouts automatically expire on a specific date. This removes the need to manually reclaim unused funds when various government schemes expire, a key operational requirement for agencies</li>
-<li>Reduced time needed to run tests on the pipeline from 15 to 3 minutes. This was done by working around a memory leak</li>
-<li>Improved various ops processes by automation, saving an estimated 1 hour per sprint</li>
+<li>Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS, Step Functions), Python</li>
+<li>Led design and implementation for the expiry of unused payouts, a core functionality now used by almost every campaign as it eliminates manual reclamation efforts. Successfully navigated complex interactions between refunds, spending, and expiry extensions</li>
+<li>Optimized API endpoints for transaction data retrieval resulting in a 400% speedup. This was done by fixing critical bugs in a DynamoDB query that caused overfetching and rare endpoint failures</li>
+<li>Improved system architecture and maintainability by decomposing monolithic Serverless deployment into smaller stacks, working around CloudFormation&rsquo;s limit of 500 resources in a single stack</li>
+<li>Spearheaded progress towards Continuous Deployment (CD) by advocating for and implementing release toggles, simplifying the deployment process and encouraging smaller, more manageable Pull Requests. Reduced time needed to prepare deployments from 60 to 15 minutes</li>
 </ul>
 <h4><span>MyCareersFuture (Aug 2018 &ndash; Sep 2021)</span></h4>
-<p><a href="https://www.mycareersfuture.sg">MyCareersFuture (MCF)</a> is a job portal that matches jobseekers and employers through skill matching.</p>
+<p><a href="https://www.mycareersfuture.gov.sg">MyCareersFuture (MCF)</a> is a job portal that matches jobseekers and employers through skill matching.</p>
 <ul>
 <li>Technologies: Node.js, MySQL, React, Cypress, GraphQL, CouchDB, Docker, AWS</li>
 <li>Design, build, and maintain microservices for managing jobseeker data and integration with third party service providers</li>
-<li>Led a year long effort to decouple MCF from a legacy system resulting in 3% more uptime and 10% less code in the backend. This code was used to keep data in sync with the legacy system bidirectionally in real-time. This limited MCF&rsquo;s uptime and has been the cause of data corruption issues</li>
-<li>Led design of new APIs for third parties that MCF integrates with, so API consumers pull data instead of data being pushed to each new third party. This means that work only needs to be done once to build the APIss with minimal effort to onboard new API consumers</li>
-<li>Reduce cycle time by 50% allowing for more frequent deployments. This was done by advocating for greater ownership of the end-to-end tests in the pipeline among developers. This increased the frequency of green builds deployable to production from once per fortnight to multiple times a week</li>
-<li>Provide level 3 support on a rotational basis to diagnose and fix bugs in production</li>
+<li>Led a year long effort to decouple MCF from a legacy system resulting in 3% more uptime and 10% less code in the backend</li>
+<li>Designed new APIs for third-party integrations, implementing a pull-based approach that minimized onboarding efforts for new API consumers</li>
+<li>Reduced deployment cycle time by 50% through advocating for greater ownership of end-to-end tests, increasing deployable builds from bi-weekly to multiple times per week</li>
 </ul>
 <h2>Projects</h2>
 <ul>
+<li>Created <a href="https://github.com/Neurrone/beets-audible">Beets-audible</a>, a plugin that adds support for audiobook management to Beets, a popular open-source music organizer</li>
 <li>Added support for keyboard navigation to the JSON viewer in Mozilla Firefox, released in version 76</li>
-<li>Created <a href="https://github.com/Neurrone/beets-audible">Beets-audible</a>, a plugin that adds support for audiobook management to Beets. Beets is an open-source music organizer with over 10000 stars on Github</li>
 </ul>
 <h2>Education</h2>
 <h3><span>National University of Singapore, BComp. Computer Science, Honors (Highest Distinction)</span> <span>2015 &ndash; 2018</span></h3>
@@ -178,7 +183,7 @@ hand -->
 </ul>
 <h2>Interests</h2>
 <ul>
-<li>Coffee</li>
+<li>Specialty coffee</li>
 <li>Reading science fiction and fantasy</li>
 </ul></main>
 </body>
