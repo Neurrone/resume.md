@@ -31,8 +31,8 @@ hand -->
 
 [GovWallet](https://www.developer.tech.gov.sg/products/categories/platform/govwallet/overview.html) is a reusable system for government agencies to disburse payouts to citizens. GovWallet has disbursed over $400 million across 30 campaigns, served 1.5 million users, and processed 7.6 million transactions.
 
-- Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS, Step Functions), Python
-- Designed and implemented a scalable payout expiry system capable of handling millions of transactions across multiple campaigns. This core functionality is now used by almost every campaign, eliminating manual reclamation efforts for unused funds
+- Technologies: TypeScript, Node.js, AWS (DynamoDB, Lambda, SQS, Step Functions), Python, Golang, Postgres
+- Co-led development for the $300 million CulturePass initiative, enabling 3 million citizens to receive $100 credits for local arts and heritage programmes. Orchestrated payment integration between multiple government agencies and ticketing partners
 - Optimized API endpoints for transaction data retrieval resulting in a 400% speedup. This was done by fixing critical bugs in a DynamoDB query that caused overfetching and rare endpoint failures
 - Improved system architecture and maintainability by decomposing monolithic Serverless deployment into smaller stacks, working around CloudFormation's limit of 500 resources in a single stack
 - Spearheaded progress towards Continuous delivery by advocating for and implementing release toggles, simplifying the deployment process and encouraging smaller, more manageable Pull Requests. Reduced time needed to prepare deployments from 60 to 15 minutes
@@ -54,7 +54,7 @@ hand -->
 
 ## Education
 
-### <span>National University of Singapore, BComp. Computer Science, Honors (Highest Distinction)</span> <span>2015 -- 2018</span>
+### <span>National University of Singapore, BComp. Computer Science, Honors (Highest Distinction)</span> <span>2014 -- 2018</span>
 
 - GPA 4.55/5.0
 
